@@ -1,0 +1,106 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('src/fondo.png'); /* Ruta de la imagen */
+  background-size: cover; /* Hace que la imagen cubra todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-attachment: fixed; /* Fija la imagen mientras se desplaza la página */
+}
+
+h1, h5, p {
+  color: #343a40;
+  background-color: #ffffff; /* Fondo blanco para los textos */
+ 
+  padding: 10px; /* Añadir un poco de espacio alrededor del texto */
+  border-radius: 5px;
+}
+
+
+
+/* Estilos para el contenedor central */
+.col.text-center {
+  background-color: transparent; /* Fondo transparente */
+  margin: 0; /* Elimina los márgenes */
+  padding: 0; /* Elimina el relleno */
+}
+
+/* Estilos para el título */
+#page-title {
+  color: white; /* Color de la letra blanco */
+  background-color: transparent; /* Fondo transparente */
+  padding: 10px; /* Espaciado alrededor del texto */
+  text-align: center; /* Centra el texto */
+  font-size: 2.5rem; /* Ajusta el tamaño de la fuente */
+  text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; /* Simula un borde negro alrededor del texto */
+}
+
+
+
+#header {
+  margin-bottom: 0; /* Elimina márgenes inferiores */
+  text-align: center; /* Centra el contenido dentro del contenedor */
+}
+
+#category-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #ffffff; /* Fondo blanco */
+  padding: 10px;
+  display: inline-block; /* Ajusta el contenedor al tamaño del texto */
+  margin: 0; /* Elimina los márgenes */
+}
+
+
+
+#category-form {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+#category-form select {
+  font-size: 1rem;
+}
+
+#detailInfo {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+#copyButton {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: white;
+  border: 2px solid #ffffff; /* Borde negro alrededor del botón */
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 0; /* Asegura que el botón esté alineado a la izquierda */
+  text-align: center;
+  text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; /* Borde negro alrededor del texto */
+}
+
+#copyButton:hover {
+  background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+  #category-title, #page-title {
+      font-size: 1.25rem;
+  }
+
+  #category-form {
+      padding: 20px;
+  }
+}

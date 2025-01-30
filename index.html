@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Categorías</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Vincula el CSS separado -->
+</head>
+
+<body>
+    <div id="main-container" class="container-sm my-5">
+        <!-- Contenedor con las imágenes y el título en la parte superior -->
+        <div id="header" class="row mb-0 align-items-center">
+            <!-- Imagen 1 -->
+            <div class="col-auto">
+                <img src="src/ARUSLOGO.png" alt="Logo 1" class="img-fluid" style="max-width: 300px;">
+            </div>
+        
+            <!-- Título central -->
+            <div class="col text-center p-0">
+                <h1 id="page-title" class="mb-3">Documentación de la Mesa de Ayuda</h1>
+            </div>
+        
+            <!-- Imagen 2 -->
+            <div class="col-auto">
+                <img src="src/RIOPAILALOGO.png" alt="Logo 2" class="img-fluid" style="max-width: 300px;">
+            </div>
+        </div>
+        
+        <div class="row mb-3">
+            <div class="col text-center">
+                <h1 id="category-title" class="text-center mb-4 custom-title">Gestión de Categorías</h1>
+            </div>
+
+        
+        <form id="category-form" class="p-4 border rounded bg-light">
+            <!-- Select de Categoría -->
+            <div class="mb-3 form-floating">
+                <select id="category" class="form-select" required>
+                    <option value="" selected disabled>Selecciona una categoría</option>
+                </select>
+                <label for="category">Categoría</label>
+            </div>
+
+            <!-- Select de Subcategoría -->
+            <div class="mb-3 form-floating">
+                <select id="subcategory" class="form-select" disabled required>
+                    <option value="" selected disabled>Selecciona una subcategoría</option>
+                </select>
+                <label for="subcategory">Subcategoría</label>
+            </div>
+
+            <!-- Select de Detalle -->
+            <div class="mb-3 form-floating">
+                <select id="detail" class="form-select" disabled required>
+                    <option value="" selected disabled>Selecciona un detalle</option>
+                </select>
+                <label for="detail">Detalle</label>
+            </div>
+        </form>
+
+        <!-- Contenedor para mostrar información detallada -->
+        <div id="detailInfo" class="container-sm my-3 p-3 border rounded bg-light"></div>
+
+        <!-- Botón para copiar al portapapeles -->
+        <div class="mb-3 text-center">
+            <button id="copyButton" class="btn btn-primary">Copiar al portapapeles</button>
+        </div>
+    </div>
+
+    <!-- Footer con la información de versión, fecha, autor, etc. 
+    <footer id="footer" class="bg-light p-4 mt-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 col-md-6 mb-3">
+                    <h5 class="fw-bold">Información del Documento</h5>
+                    <p class="mb-0"><strong>Fecha:</strong> 2025/01/29</p>
+                    <p class="mb-0"><strong>Versión:</strong> 1.0.0</p>
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                    <h5 class="fw-bold">Contacto</h5>
+                    <p class="mb-0"><strong>Autor:</strong> Nolberto Carmen Gomez</p>
+                    <p class="mb-0"><strong>Email:</strong> mesa_ayuda@riopaila-castilla.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    -->
+    
+    <!-- Estilo de SweetAlert2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+    <!-- Script de SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
