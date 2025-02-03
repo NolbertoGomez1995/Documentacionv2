@@ -26,7 +26,7 @@ const categories = {
 "SEGURIDAD":{
   "PORTAL DEL COLABORADOR":["CREACION DEL CASO","CREACION DE USUARIO","CREACION DE USUARIO TERCERO O PRACTICANTE","USUARIO YA CREADO EN EL PORTAL","CAMBIO DE CONTRASEÑA PORTAL"],
   "PORTAL DE PROVEEDORES":["VERIFICACION DE PROVEEDOR","CAMBIO DE CONTRASEÑA"],
-  "SAP":["COMO CREAR SOLICITUD DE PERMISOS","CONFIGURAR SAP EN EQUIPO","CREACION DE USUARIO SAP","COMUNICAR CONTRASEÑA","DESBLOQUEO","CAMBIO DE CONTRASEÑA","MODIFICACION DE USUARIO","HABILITAR CUENTA","HABILITAR CUENTA A TERCERO AUTORIZADO","VALIDAR USUARIO CREADO EN SAP"],
+  "SAP":["COMO CREAR SOLICITUD DE PERMISOS","CONFIGURAR SAP EN EQUIPO","CREACION DE USUARIO SAP","COMUNICAR CONTRASEÑA","DESBLOQUEO","CAMBIO DE CONTRASEÑA SAP","MODIFICACION DE USUARIO","HABILITAR CUENTA","HABILITAR CUENTA A TERCERO AUTORIZADO","VALIDAR USUARIO CREADO EN SAP"],
   "PERMISOS ESPECIALES":["USB PERMITIDO","NAVEGACION WHATSAPP","ACCESO ESPECIAL A INTERNET"],
   "INTERNET-RED":["ACCESO DE INTERNET A TERCEROS -> COMO CREAR EL CASO","ACCESO ESPECIAL A INTERNET CERRAR CASO","CONEXION VPN-FORTITOKEN","CONEXION FALLIDA TOKEN(REPISAR CONTRASEÑA)","CONTROLADOR DE WIFI"],
   "COMUNICACIONES":["TELEFONIA FIJA","TELEFONIA CELULAR"],
@@ -244,14 +244,14 @@ La ruta adecuada para generar la solicitud es: XXXXXXXXXXXXXXXXXXXXXXXXXX. Se re
 "DESBLOQUEO DE USUARIO": `<h4>ASUNTO: Desbloqueo</h4>
 <p>Solución: Se accede al directorio activo, se desbloquea la cuenta del usuario y se valida con él que puede ingresar correctamente. Se procede al cierre del caso.</p>`,
 
-"CAMBIO DE CONTRASEÑA PRIMER ACCESO": `<h4>ASUNTO: Cambio de Contraseña Primer Acceso</h4>
+" PRIMER ACCESO": `<h4>ASUNTO:  Primer Acceso</h4>
 <p>Solución: Se actualiza la contraseña de primer acceso en el directorio activo. Se valida con el usuario que puede cambiarla y que cumple con las políticas de seguridad. Se procede al cierre del caso.</p>`,
 
-"CAMBIO DE CONTRASEÑA REPISADA": `<h4>ASUNTO: Cambio de Contraseña - Repisada</h4>
+" REPISADA": `<h4>ASUNTO:  - Repisada</h4>
 <p>Solución: Se revisa y se Repisa la contraseña en el directorio activo. Se valida con el usuario, quien confirma el acceso correcto. Se procede al cierre del caso.</p>`,
 
-"CAMBIO DE CONTRASEÑA DA": `<h4>ASUNTO: Cambio de Contraseña por el Usuario</h4>
-<p>Solución: Para realizar el cambio de contraseña debe de presionar las teclas control+alt+suprimir y elegir la opción de CAMBIO DE CONTRASEÑA, recuerde tener en cuenta las recomendaciones de seguridad de no usar contraseñas repetidas, el uso de mayúsculas, minúsculas, números y caracteres especiales.</p>`,
+" DA": `<h4>ASUNTO:  por el Usuario</h4>
+<p>Solución: Para realizar el  debe de presionar las teclas control+alt+suprimir y elegir la opción de , recuerde tener en cuenta las recomendaciones de seguridad de no usar contraseñas repetidas, el uso de mayúsculas, minúsculas, números y caracteres especiales.</p>`,
 
 "HABILITAR CUENTA": `<h4>ASUNTO: Habilitar Cuenta</h4>
 <p>Solución: Se desbloquea la cuenta del usuario en el Directorio Activo tras confirmarse el fin del periodo de ausencia autorizada. Se valida con el usuario que puede acceder correctamente.</p>`,
@@ -527,14 +527,14 @@ La ruta adecuada para generar la solicitud es: XXXXXXXXXXXXXXXXXXXXXXXXXX. Se re
 "USUARIO YA CREADO EN EL PORTAL": `<h5>Asunto: USUARIO YA CREADO EN EL PORTAL</h5>
 <p><strong>Solución:</strong> Se ingresa al Portal de Colaboradores y se ha verificado que el usuario XXXXX ya se encuentra previamente registrado. Dado que no es necesario crearlo de nuevo, se procederá al cierre del caso en base a esta confirmación.</p>`,
 
-"CAMBIO DE CONTRASEÑA PORTAL": `<h5>Asunto: CAMBIO DE CONTRASEÑA</h5>
+" PORTAL": `<h5>Asunto: </h5>
 <p><strong>Solución:</strong> Se ingresa al Portal de Colaboradores y se procede a actualizar la contraseña con la contraseña de primer acceso. Se valida directamente con el usuario, y se le indica que debe cambiar la contraseña por una nueva, siguiendo las políticas establecidas. Se verifica que el usuario pueda ingresar correctamente y se procede al cierre del caso.</p>`,
 
 "VERIFICACION DE PROVEEDOR": `<h2>VERIFICACIÓN DEL PROVEEDOR</h2>
 <p><strong>ASUNTO:</strong> VERIFICACIÓN DEL PROVEEDOR</p>
 <p><strong>SOLUCIÓN:</strong> Se accede al Portal de Proveedores y se verifica que el usuario XXXXX ya está registrado previamente. Dado que no es necesario crearlo de nuevo, se procederá al cierre del caso en base a esta confirmación.</p>`,
 
-"CAMBIO DE CONTRASEÑA": `<h2>CAMBIO DE CONTRASEÑA</h2>
+"": `<h2>CAMBIO DE CONTRASEÑA</h2>
 <p><strong>ASUNTO:</strong> CAMBIO DE CONTRASEÑA</p>
 <p><strong>SOLUCIÓN:</strong> Se ha accedido al Portal de Proveedores y se ha llevado a cabo el cambio de contraseña según la preferencia del usuario. Confirmamos la actualización y nos ponemos a disposición para cualquier otra gestión o consulta que pueda necesitar.</p>`,
 
@@ -576,7 +576,7 @@ La ruta adecuada para generar la solicitud es: XXXXXXXXXXXXXXXXXXXXXXXXXX. Se re
 <p><strong>ASUNTO:</strong> DESBLOQUEO</p>
 <p><strong>SOLUCIÓN:</strong> Se accede al entorno SAP del ambiente XXX y se verifica que el usuario se encuentra bloqueado. Se procede a realizar el desbloqueo de la cuenta y se confirma la acción con el usuario, quien a su vez valida que puede ingresar correctamente. Con el usuario operativo y sin problemas de acceso, se procede al cierre del caso.</p>`,
 
-"CAMBIO DE CONTRASEÑA": `<h2>CAMBIO DE CONTRASEÑA</h2>
+"CAMBIO DE CONTRASEÑA SAP": `<h2>CAMBIO DE CONTRASEÑA</h2>
 <p><strong>ASUNTO:</strong> CAMBIO DE CONTRASEÑA</p>
 <p><strong>SOLUCIÓN:</strong> Se accede al entorno SAP XXX y se lleva a cabo la actualización de la contraseña de acuerdo con la contraseña de primer acceso SAP*1234. Se realiza la validación con el usuario, quien confirma la capacidad para modificar la contraseña según las políticas establecidas. Posteriormente, se verifica que el usuario pueda ingresar correctamente con la nueva contraseña. Finalmente, se procede al cierre del caso.</p>`,
 
