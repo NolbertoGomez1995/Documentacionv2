@@ -13,7 +13,7 @@ const categories = {
   "OUTLOOK": ["MODO SEGURO","VALIDAR LICENCIA","COMO SOLICITAR LICENCIA","COMPLEMENTOS DE TEAMS","INSTALAR ARCHIVOS PST","AGREGAR CUENTA DE CORREO","CORREOS EN LISTA BLANCA","CERRAR CASO CORREO LISTA BLANCA","CERRAR CASO LISTA BLANCA DOCUMENTACION","PERMISOS DE CORREO EN CELULAR"],
 },
 "INFRAESTRUCTURA": {
-  "DIRECTORIO ACTIVO": ["CREACION DE USUARIO EN DA","DESBLOQUEO DE USUARIO","CAMBIO DE CONTRASEÑA PRIMER ACCESO","CAMBIO DE CONTRASEÑA REPISADA","CAMBIO DE CONTRASEÑA","HABILITAR CUENTA","HABILITAR CUENTA DE TERCERO","MODIFICACION DE USUARIO","CREAR CASO DE MODIFICACION DE USUARIO","ELIMINACION DE EQUIPO DE DOMINIO"],
+  "DIRECTORIO ACTIVO": ["CREACION DE USUARIO EN DA","DESBLOQUEO DE USUARIO","CAMBIO DE CONTRASEÑA PRIMER ACCESO","CAMBIO DE CONTRASEÑA REPISADA","CAMBIO DE CONTRASEÑA DA","HABILITAR CUENTA","HABILITAR CUENTA DE TERCERO","MODIFICACION DE USUARIO","CREAR CASO DE MODIFICACION DE USUARIO","ELIMINACION DE EQUIPO DE DOMINIO"],
   "ALISTAMIENTO DE PUESTO DE TRABAJO":["SOLICITAR EQUIPO NUEVO","CONFIGURACION DE EQUIPO DE COMPUTO","PRESTAMO DE EQUIPOS Y ACCESORIOS","SOLICITUD DE PERIFERICOS"],
 },
 "FALLAS DE INFRAESTRUCTURA":{
@@ -24,7 +24,7 @@ const categories = {
   "IMPRESORAS":["CREACION DE CODIGO DE IMPRESION","CODIGO DE IMPRESION","SOLICITUD DE INSTALACION DE IMPRESORA","INSTALACION DE IMPRESORA","SOLICITUD DE TONER"]
 },
 "SEGURIDAD":{
-  "PORTAL DEL COLABORADOR":["CREACION DEL CASO","CREACION DE USUARIO","CREACION DE USUARIO TERCERO O PRACTICANTE","USUARIO YA CREADO EN EL PORTAL","CAMBIO DE CONTRASEÑA"],
+  "PORTAL DEL COLABORADOR":["CREACION DEL CASO","CREACION DE USUARIO","CREACION DE USUARIO TERCERO O PRACTICANTE","USUARIO YA CREADO EN EL PORTAL","CAMBIO DE CONTRASEÑA PORTAL"],
   "PORTAL DE PROVEEDORES":["VERIFICACION DE PROVEEDOR","CAMBIO DE CONTRASEÑA"],
   "SAP":["COMO CREAR SOLICITUD DE PERMISOS","CONFIGURAR SAP EN EQUIPO","CREACION DE USUARIO SAP","COMUNICAR CONTRASEÑA","DESBLOQUEO","CAMBIO DE CONTRASEÑA","MODIFICACION DE USUARIO","HABILITAR CUENTA","HABILITAR CUENTA A TERCERO AUTORIZADO","VALIDAR USUARIO CREADO EN SAP"],
   "PERMISOS ESPECIALES":["USB PERMITIDO","NAVEGACION WHATSAPP","ACCESO ESPECIAL A INTERNET"],
@@ -250,7 +250,7 @@ La ruta adecuada para generar la solicitud es: XXXXXXXXXXXXXXXXXXXXXXXXXX. Se re
 "CAMBIO DE CONTRASEÑA REPISADA": `<h4>ASUNTO: Cambio de Contraseña - Repisada</h4>
 <p>Solución: Se revisa y se Repisa la contraseña en el directorio activo. Se valida con el usuario, quien confirma el acceso correcto. Se procede al cierre del caso.</p>`,
 
-"CAMBIO DE CONTRASEÑA": `<h4>ASUNTO: Cambio de Contraseña por el Usuario</h4>
+"CAMBIO DE CONTRASEÑA DA": `<h4>ASUNTO: Cambio de Contraseña por el Usuario</h4>
 <p>Solución: Para realizar el cambio de contraseña debe de presionar las teclas control+alt+suprimir y elegir la opción de CAMBIO DE CONTRASEÑA, recuerde tener en cuenta las recomendaciones de seguridad de no usar contraseñas repetidas, el uso de mayúsculas, minúsculas, números y caracteres especiales.</p>`,
 
 "HABILITAR CUENTA": `<h4>ASUNTO: Habilitar Cuenta</h4>
@@ -527,7 +527,7 @@ La ruta adecuada para generar la solicitud es: XXXXXXXXXXXXXXXXXXXXXXXXXX. Se re
 "USUARIO YA CREADO EN EL PORTAL": `<h5>Asunto: USUARIO YA CREADO EN EL PORTAL</h5>
 <p><strong>Solución:</strong> Se ingresa al Portal de Colaboradores y se ha verificado que el usuario XXXXX ya se encuentra previamente registrado. Dado que no es necesario crearlo de nuevo, se procederá al cierre del caso en base a esta confirmación.</p>`,
 
-"CAMBIO DE CONTRASEÑA": `<h5>Asunto: CAMBIO DE CONTRASEÑA</h5>
+"CAMBIO DE CONTRASEÑA PORTAL": `<h5>Asunto: CAMBIO DE CONTRASEÑA</h5>
 <p><strong>Solución:</strong> Se ingresa al Portal de Colaboradores y se procede a actualizar la contraseña con la contraseña de primer acceso. Se valida directamente con el usuario, y se le indica que debe cambiar la contraseña por una nueva, siguiendo las políticas establecidas. Se verifica que el usuario pueda ingresar correctamente y se procede al cierre del caso.</p>`,
 
 "VERIFICACION DE PROVEEDOR": `<h2>VERIFICACIÓN DEL PROVEEDOR</h2>
